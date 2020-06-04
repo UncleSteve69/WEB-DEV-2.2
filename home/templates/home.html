@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+        {% load static %}
+        <title>Drinmix</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'fonts/beyond_the_mountains-webfont.css' %}" type="text/css"/>
+
+        <!-- Stylesheets -->
+        <link href="{% static 'plugin-frameworks/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'plugin-frameworks/swiper.css' %}" rel="stylesheet">
+        <link href="{% static 'fonts/ionicons.css' %}" rel="stylesheet">
+        <link href="{% static 'common/styles.css' %}" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+        <div class="container">
+                <a class="logo" href="#"><img src="{% static 'images/logo.png' %}" alt="Logo"></a>
+
+                <div class="right-area">
+                        <h6><a class="plr-20 color-white btn-fill-primary" href="#">ORDER</a></h6>
+                </div><!-- right-area -->
+
+                <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+
+                <ul class="main-menu font-mountainsre" id="main-menu">
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/about_us">ABOUT US</a></li>
+                        <li><a href="/blog">BLOG</a></li>
+                </ul>
+
+                <div class="clearfix"></div>
+        </div><!-- container -->
+</header>
+
+
+<section class="bg-1 h-900x main-slider pos-relative">
+        <div class="triangle-up pos-bottom"></div>
+        <div class="container h-100">
+                <div class="dplay-tbl">
+                        <div class="dplay-tbl-cell center-text color-white">
+                                <h5><b>Robot-Bartender</b></h5>
+                                <h1 class="mt-30 mb-15">Drinmix</h1>
+                        </div><!-- dplay-tbl-cell -->
+                </div><!-- dplay-tbl -->
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="heading">
+                        <h2>Our Menu</h2>
+                </div>
+
+                <div class="row">
+                        <div class="col-sm-12">
+                                <ul class="selecton brdr-b-primary mb-70">
+                                        <li><a class="active" href="#" data-select="*"><b>ALL</b></a></li>
+                                        <li><a href="#" data-select="True"><b>ALCOHOLIC</b></a></li>
+                                        <li><a href="#" data-select="False"><b>NON-ALCOHOLIC</b></a></li>
+                                </ul>
+                        </div><!--col-sm-12-->
+                </div><!--row-->
+
+                <div class="row">
+                        <!-- <div class="col-md-6 food-menu {{alc}}"> -->
+                        <div class="col-md-6 food-menu {{Cocktail1.alcohol}}">
+                                <div class="sided-90x mb-30 ">           <!-- src="{% static img %}" -->
+                                        <div class="s-left"><img class="br-3" src="{% static Cocktail1.img %}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{Cocktail1.name}}</b><b class="color-primary float-right">₴ {{Cocktail1.price}}</b></h5>
+                                                <p class="pr-70">Vol: {{Cocktail1.volume}} L</p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6 food-menu {{Cocktail2.alcohol}}">
+                                <div class="sided-90x mb-30 ">           <!-- src="{% static img %}" -->
+                                        <div class="s-left"><img class="br-3" src="{% static Cocktail2.img %}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{Cocktail2.name}}</b><b class="color-primary float-right">₴ {{Cocktail2.price}}</b></h5>
+                                                <p class="pr-70">Vol: {{Cocktail2.volume}} L</p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6 food-menu {{Cocktail3.alcohol}}">
+                                <div class="sided-90x mb-30 ">           <!-- src="{% static img %}" -->
+                                        <div class="s-left"><img class="br-3" src="{% static Cocktail3.img %}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{Cocktail3.name}}</b><b class="color-primary float-right">₴ {{Cocktail3.price}}</b></h5>
+                                                <p class="pr-70">Vol: {{Cocktail3.volume}} L</p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                       <div class="col-md-6 food-menu {{Cocktail4.alcohol}}">
+                                <div class="sided-90x mb-30 ">           <!-- src="{% static img %}" -->
+                                        <div class="s-left"><img class="br-3" src="{% static Cocktail4.img %}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{Cocktail4.name}}</b><b class="color-primary float-right">₴ {{Cocktail4.price}}</b></h5>
+                                                <p class="pr-70">Vol: {{Cocktail4.volume}} L</p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6 food-menu {{Cocktail5.alcohol}}">
+                                <div class="sided-90x mb-30 ">           <!-- src="{% static img %}" -->
+                                        <div class="s-left"><img class="br-3" src="{% static Cocktail5.img %}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{Cocktail5.name}}</b><b class="color-primary float-right">₴ {{Cocktail5.price}}</b></h5>
+                                                <p class="pr-70">Vol: {{Cocktail5.volume}} L</p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                       <div class="col-md-6 food-menu {{Cocktail6.alcohol}}">
+                                <div class="sided-90x mb-30 ">           <!-- src="{% static img %}" -->
+                                        <div class="s-left"><img class="br-3" src="{% static Cocktail6.img %}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{Cocktail6.name}}</b><b class="color-primary float-right">₴ {{Cocktail6.price}}</b></h5>
+                                                <p class="pr-70">Vol: {{Cocktail6.volume}} L</p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6 food-menu {{Cocktail7.alcohol}}">
+                                <div class="sided-90x mb-30 ">           <!-- src="{% static img %}" -->
+                                        <div class="s-left"><img class="br-3" src="{% static Cocktail7.img %}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{Cocktail7.name}}</b><b class="color-primary float-right">₴ {{Cocktail7.price}}</b></h5>
+                                                <p class="pr-70">Vol: {{Cocktail7.volume}} L</p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6 food-menu {{Cocktail8.alcohol}}">
+                                <div class="sided-90x mb-30 ">           <!-- src="{% static img %}" -->
+                                        <div class="s-left"><img class="br-3" src="{% static Cocktail8.img %}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{Cocktail8.name}}</b><b class="color-primary float-right">₴ {{Cocktail8.price}}</b></h5>
+                                                <p class="pr-70">Vol: {{Cocktail8.volume}} L</p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                </div><!-- row -->
+        </div><!-- container -->
+</section>
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <div class="heading">
+                        <h2>How it works</h2>
+                </div>
+                <div class="display-video">
+                      <video width="720" height="480" controls>
+                              <source src="{% static 'images/video.mp4' %}" type="video/mp4">
+                      </video>
+                </div>
+        </div>
+</section>
+
+
+<section class="story-area left-text center-sm-text pos-relative">
+        <div class="abs-tbl bg-2 w-20 z--1 dplay-md-none"></div>
+        <div class="abs-tbr bg-3 w-20 z--1 dplay-md-none"></div>
+        <div class="container">
+                <div class="heading">
+                        <h2>About us</h2>
+                </div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <p class="mb-30">DRINMIX is a Robot-Bartender, that will serve you any drink you like.</p>
+                        </div><!-- col-md-6 -->
+
+                        <div class="col-md-6">
+                                <p class="mb-30">It's based on  Arduino mega, some motors and a lot of work...</p>
+                        </div><!-- col-md-6 -->
+                </div><!-- row -->
+        </div><!-- container -->
+</section>
+
+
+<footer class="pb-50  pt-70 pos-relative">
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container-fluid">
+                <div class="pt-30">
+                        <p class="underline-secondary"><b>Address:</b></p>
+                        <p>Stepana Bandery 14, Lviv</p>
+                </div>
+
+                <div class="pt-30">
+                        <p class="underline-secondary mb-10"><b>Phone:</b></p>
+                        <a href="tel:+53 345 7953 32453 ">+38(098)7654321</a>
+                </div>
+
+                <div class="pt-30">
+                        <p class="underline-secondary mb-10"><b>Email:</b></p>
+                        <a href="mailto:yourmail@gmail.com"> drinmix@gmail.com</a>
+                </div>
+
+                <ul class="icon mt-30">
+                        <li><a href="https://www.facebook.com/DRINMIX/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/drinmix/"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+        </div><!-- container -->
+</footer>
+
+<!-- SCIPTS -->
+<script src="{% static 'plugin-frameworks/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'plugin-frameworks/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugin-frameworks/swiper.js' %}"></script>
+<script src="{% static 'common/scripts.js' %}"></script>
+
+</body>
+</html>

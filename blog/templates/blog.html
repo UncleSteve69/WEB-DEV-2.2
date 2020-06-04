@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+        {% load static %}
+        <title>Drinmix</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'fonts/beyond_the_mountains-webfont.css' %}" type="text/css"/>
+
+        <!-- Stylesheets -->
+        <link href="{% static 'plugin-frameworks/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'plugin-frameworks/swiper.css' %}" rel="stylesheet">
+        <link href="{% static 'fonts/ionicons.css' %}" rel="stylesheet">
+        <link href="{% static 'common/styles.css' %}" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+        <div class="container">
+                <a class="logo" href="#"><img src="{% static 'images/logo.png' %}" alt="Logo"></a>
+
+                <div class="right-area">
+                        <h6><a class="plr-20 color-white btn-fill-primary" href="#">ORDER</a></h6>
+                </div><!-- right-area -->
+
+                <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+
+                <ul class="main-menu font-mountainsre" id="main-menu">
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/about_us">ABOUT US</a></li>
+                        <li><a href="/blog">BLOG</a></li>
+                </ul>
+
+                <div class="clearfix"></div>
+        </div><!-- container -->
+</header>
+
+
+<section class="bg-7 h-500x main-slider pos-relative">
+        <div class="triangle-up pos-bottom"></div>
+        <div class="container h-100">
+                <div class="dplay-tbl">
+                        <div class="dplay-tbl-cell center-text color-white">
+                                <h5><b>THE BEST IN TOWN</b></h5>
+                                <h3 class="mt-30 mb-15">Our Blog</h3>
+                        </div><!-- dplay-tbl-cell -->
+                </div><!-- dplay-tbl -->
+        </div><!-- container -->
+</section>
+
+
+<section class="story-area left-text center-sm-text">
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-7 col-lg-8">
+
+                                <div class="mb-50 mb-sm-30">
+                                        <div class="pos-relative mb-30 pt-15">
+                                                <div class="font-8 abs-tl p-20 bg-primary color-white">
+                                                        <h4><b>26</b></h4>
+                                                        <h4><b>05</b></h4>
+                                                        <h4><b>20</b></h4>
+                                                        <div class="brdr-style-1"></div>
+                                                </div>
+                                                <img src="{% static 'images/post-3.jpg' %}" alt="">
+                                        </div>
+                                        <h4><a href="#"><b>Assembly started</b></a></h4>
+                                        <p class="mt-10">Today we started assembling our Robot-Bartender.</p>
+                                        <h6 class="mt-10 bg-lite-blue dplay-inl-block">
+                                                <a class="plr-20 mtb-10" href="#"><b>By Admin</b></a>
+                                        </h6>
+                                </div><!--mb-30-->
+
+                                <div class="mb-50 mb-sm-30">
+                                        <div class="pos-relative mb-30 pt-15">
+                                                <div class="font-8 abs-tl p-20 bg-primary color-white">
+                                                        <h4><b>26</b></h4>
+                                                        <h4><b>05</b></h4>
+                                                        <h4><b>20</b></h4>
+                                                        <div class="brdr-style-1"></div>
+                                                </div>
+                                                <img src="{% static 'images/post-2.jpg' %}" alt="">
+                                        </div>
+                                        <h4><a href="#"><b>Making the body</b></a></h4>
+                                        <p class="mt-10">We're in the process of cutting out all the parts needed to
+                                                         assemble our robot-bartender</p>
+                                        <h6 class="mt-10 bg-lite-blue dplay-inl-block">
+                                                <a class="plr-20 mtb-10" href="#"><b>By Admin</b></a>
+                                        </h6>
+                                </div><!--mb-30-->
+
+                                <div class="mb-50 mb-sm-30">
+                                        <div class="pos-relative mb-30 pt-15">
+                                                <div class="font-8 abs-tl p-20 bg-primary color-white">
+                                                        <h4><b>26</b></h4>
+                                                        <h4><b>05</b></h4>
+                                                        <h4><b>20</b></h4>
+                                                        <div class="brdr-style-1"></div>
+                                                </div>
+                                                <img src="{% static 'images/post-1.jpg' %}" alt="">
+                                        </div>
+                                        <h4><a href="#"><b>New parts arrived</b></a></h4>
+                                        <p class="mt-10">We've just received all af the parts need to create our robot.</p>
+                                        <h6 class="mt-10 bg-lite-blue dplay-inl-block">
+                                                <a class="plr-20 mtb-10" href="#"><b>By Admin</b></a>
+                                        </h6>
+                                </div><!--mb-30-->
+                        </div><!--col-md-8-->
+
+                        <div class="col-md-5 col-lg-4">
+                                <div class="mx-w-400x mlr-auto">
+                                        <div class="mb-50 mb-sm-30">
+                                                <h5 class="mb-30 left-text"><b>Latest Posts</b></h5>
+                                                <div class="sided-90x mb-30 ">
+                                                        <div class="s-left"><img class="br-3" src="{% static 'images/post-3.1.jpg' %}" alt="Menu Image"></div>
+                                                        <div class="s-right left-text">
+                                                                <h6 class="font-11 mtb-5"><b>Assembly started</b></h6>
+                                                                <h6 class="color-primary"><b>May  26, 2020</b></h6>
+                                                        </div><!--s-right-->
+                                                </div><!-- sided-90x -->
+
+                                                <div class="sided-90x mb-30 ">
+                                                        <div class="s-left"><img class="br-3" src="{% static 'images/post-2.1.jpg' %}" alt="Menu Image"></div>
+                                                        <div class="s-right left-text">
+                                                                <h6 class="font-11 mtb-5"><b>Making the body</b></h6>
+                                                                <h6 class="color-primary"><b>May  26, 2020</b></h6>
+                                                        </div><!--s-right-->
+                                                </div><!-- sided-90x -->
+
+                                                <div class="sided-90x mb-30 ">
+                                                        <div class="s-left"><img class="br-3" src="{% static 'images/post-1.jpg' %}" alt="Menu Image"></div>
+                                                        <div class="s-right left-text">
+                                                                <h6 class="font-11 mtb-5"><b>New parts arrived</b></h6>
+                                                                <h6 class="color-primary"><b>May  26, 2020</b></h6>
+                                                        </div><!--s-right-->
+                                                </div><!-- sided-90x -->
+                                        </div><!--mb-50-->
+                                </div><!--mx-w-500x-->
+                        </div><!--col-md-4-->
+                </div><!-- row -->
+        </div><!-- container -->
+</section>
+
+<footer class="pb-50  pt-70 pos-relative">
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container-fluid">
+                <div class="pt-30">
+                        <p class="underline-secondary"><b>Address:</b></p>
+                        <p>Stepana Bandery 14, Lviv</p>
+                </div>
+
+                <div class="pt-30">
+                        <p class="underline-secondary mb-10"><b>Phone:</b></p>
+                        <a href="tel:+53 345 7953 32453 ">+38(098)7654321</a>
+                </div>
+
+                <div class="pt-30">
+                        <p class="underline-secondary mb-10"><b>Email:</b></p>
+                        <a href="mailto:yourmail@gmail.com"> drinmix@gmail.com</a>
+                </div>
+
+                <ul class="icon mt-30">
+                        <li><a href="https://www.facebook.com/DRINMIX/"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/drinmix/"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+        </div><!-- container -->
+</footer>
+
+<!-- SCIPTS -->
+<script src="{% static 'plugin-frameworks/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'plugin-frameworks/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugin-frameworks/swiper.js' %}"></script>
+<script src="{% static 'common/scripts.js' %}"></script>
+
+</body>
+</html>
